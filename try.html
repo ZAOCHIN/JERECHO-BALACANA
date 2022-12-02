@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balacaña - Personal Porfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/679bf0911f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">HOBBIES</a></li>
+                <li><a href="#portfolio">PHOTOS</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>Certified Loverboy</p>
+            <h1>Hi! I'm Jerecho<br>"<span>Echo</span>" Sason Balacaña</h1>
+        </div>
+    </div>
+</div>
+<!-- ABOUT SECTION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/pic2.png">
+            </div>
+            <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p> Hi, Im Jerecho Sason Balacaña,
+but everyone knows me by my nickname “Echo”. A dreamer
+and a big brother of two, Xian and Tantan. Im actually from the province but currently
+residing here in Batangas City because of my studies. A person like me is willing to work hard
+just to give the people I love the life they always wanted. I honestly is not smart when it comes to my education
+but I know that everytime I act or do something, I try to do it with maximum effort in order to get and achieved great results.</p>
+               
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('training')">Training & Seminars</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>● MS Office Literacy</span><br>Microsoft Offices Apps(Word, Excel, Powerpoint,etc.)</li>
+                        <li><span>● Programming Languages</span><br>HTML, CSS, and Java</li>
+                        <li><span>● Social Skills</span><br>In person and Online</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>● Primary Education</span><br>Juan Morente Senior Memorial Pilot School(JMSMPS)</li>
+                        <li><span>● Secondary Education</span><br>Abada College</li>
+                        <li><span>● Tertiary Education</span><br>Batangas State University (BSU)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="training">
+                    <ul>
+                        <li><span>● OJT/Work Immersion</span><br>Company Name: Arrow Up Media. To and Fro</li>
+                        <li><span>● Camps</span><br>Leadership Camp (2018)</li>
+                        <li><span>● Seminar</span><br>Resume Writing and Proper Grooming Seminar (Abada College) </li>
+                    </ul>
+                </div>
+        </div>
+        </div>
+    </div> 
+</div>
+
+<!-- hobby-->
+
+<div id="services">
+    <div class="container">
+         <h1 class="sub-title">My Hobbies</h1>
+         <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-headset"></i>
+                    <h2>Gaming</h2>
+                    <br>
+                    <p>When I am in my free time, I mostly spend it by playing online games. Honestly playing online games
+                        somehow takes me away from the stress that the real world is giving me. A place where I find peace is through gaming online.</p>
+    
+                </div>
+                <div>
+                    <i class="fa-solid fa-tv"></i>
+                    <h2>Watching Anime</h2>
+                    <br>
+                    <p>Watching Animated Entertainment is a hobby of mine especially when I am following a certain show or series, I'll watch and 
+                        entertain myself with the quality of animated films and anime with a wholesome or even sad endings that will probably affect my life for a quite while</p>
+                    </div>
+                <div>
+                    <i class="fa-solid fa-pen-nib"></i>
+                    <h2>Writing</h2>
+                    <br>
+                    <p>I sometimes write literally about anything. Whether its about my day, what im feeling currently, or writing about how 
+                        I am deeply in love with the love of my life.</p>
+                    
+                </div>
+                
+         </div>
+    </div>
+</div>
+<!-- GALLERY -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Photos</h1>
+        <div class="container">        
+            <div class="gallery-wrap">
+              <div class="item item-1"></div>
+              <div class="item item-2"></div>
+              <div class="item item-3"></div>
+              <div class="item item-4"></div>
+              <div class="item item-5"></div>
+            </div>
+           </div>
+        </div>
+        </div>
+    </div>
+</div>
+<footer class="section">
+    <div class="container">
+      <p>Contact Me &copy; Social Media</p>
+      <ul>
+        <li><a target="_blank" class="facebook" href="https://www.facebook.com/just.jerecho19"><i class="fa fa-fw fa-2x fa-inverse fa-facebook"></i></a></li>
+        <li><a target="_blank" class="linkedin" href="https://www.linkedin.com/in/jerecho-balaca%C3%B1a-277965205/"><i class="fa fa-fw fa-2x fa-inverse fa-linkedin"></i></a></li>
+        <li><a target="_blank" class="instagram" href="https://www.instagram.com/j_echoo/"><i class="fa fa-fw fa-2x fa-inverse fa-instagram"></i></a></li>
+           
+      </ul>
+    </div>
+  </footer>
+
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab"); 
+}
+
+
+
+
+    
+</script>
+</body>
+</html>

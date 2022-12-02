@@ -1,0 +1,266 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior:smooth;
+}
+body{
+    background: #080800;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 3%;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 80px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 60px;
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height: 3px;
+    background: #ffff;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 30px;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-top: 10px;
+}
+.header-text h1 span{
+    color: #ff004f;
+}
+/* ABOUT SECTION */
+
+#about{
+    padding: 80px 0;
+    color: #ffffff;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.about-col-1{
+    flex-basis: 35%;
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+.sub-title{
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: hsl(0, 94%, 45%);
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;  
+}
+.tab-links.active-link::after{
+    width: 50%;
+}
+.tab-contents ul li{
+    list-style: none;
+    margin: 10px 0;
+}
+.tab-contents ul li span{
+    color: #bc3a63;
+    font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+.tab-contents.active-tab{
+    display: block;
+}
+/* ----------Hobbies-------------- */
+
+#services{
+    padding: 30px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, trasform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.services-list div i h2{
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+.services-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+.services-list div:hover{
+    background: #ff004f;
+    transform: translateY(-10px);
+}
+/* pics */
+#portfolio{
+    padding: 50px 0;
+    
+}
+.container{
+    padding: 75px 0;
+    margin: 0 auto;
+    width: 1140px;
+  }
+  
+  .gallery-wrap {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 70vh;
+  }
+  
+  .item {
+    flex: 1;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: flex 1.5s ease;
+  }
+  .item:hover{
+    flex: 7;
+  }
+  
+  .item-1 { 
+    background-image: url("images/selfpic1.jpg");
+  }
+  
+  .item-2 { 
+    background-image: url("images/selfpic2.png");
+  }
+  
+  .item-3 { 
+    background-image: url("images/waving.jpg");
+  }
+  
+  .item-4 { 
+    background-image: url("images/withlove2.jpg");
+  }
+  
+  .item-5 { 
+    background-image: url("images/withlove4.jpg");
+  }
+  
+
+  footer {
+    background:#363b3f;
+    padding-bottom: 0px;
+   }
+  
+  footer p {
+    font-size:12px;
+    color:#fff;
+    text-align:center;
+    padding-top: 0px;
+  }
+  
+  footer ul {
+      width: 100%;
+      text-align: center;
+      margin-top: 10px;
+      padding-left: 0px;
+  }
+  
+  footer li {
+      display: inline-block;
+      margin: 4px;
+  }
+  
+  footer li a {
+      display: block;
+      text-decoration: none;
+      border-bottom: medium none;
+      padding: 10px;
+      border-radius: 3px;
+      transition: all 0.3s ease-in 0s, all 1s ease 0s;
+      background: #444749;
+  }
+  
+  footer .facebook:hover {
+    background-color:#365397;
+  }
+  footer .linkedin:hover {
+    background-color:#ff3333;
+  }
+  footer .instagram:hover {
+    background-color:#396d9a;
+  }
